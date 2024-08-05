@@ -1,0 +1,3 @@
+import AllUsersCreateListFromSelectedModal from './AllUsersCreateListFromSelectedModal';
+
+export default AllUsersCreateListFromSelectedModal;

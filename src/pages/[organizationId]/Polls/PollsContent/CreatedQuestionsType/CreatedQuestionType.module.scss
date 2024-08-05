@@ -1,0 +1,24 @@
+.wrapperSpinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countAnswerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .countAnswer {
+    padding: 1px 10px;
+    border-radius: 8px;
+    background: linear-gradient(138.63deg, #828ecc 26.98%, #c6c4f1 100%);
+    color: #fff;
+  }
+  .rightAnswer {
+    background: linear-gradient(138.63deg, #82cc9e 26.98%, #c4f1d3 100%);
+  }
+}

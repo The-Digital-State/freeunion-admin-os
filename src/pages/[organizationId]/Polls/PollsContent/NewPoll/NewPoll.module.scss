@@ -1,0 +1,62 @@
+.imageInputsWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  gap: 30px;
+  .addImageButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 130px;
+    height: 130px;
+    margin-right: 30px;
+    background: linear-gradient(138.63deg, rgba(130, 142, 204, 0.15) 26.98%, rgba(198, 196, 241, 0.15) 100%);
+    cursor: pointer;
+    color: #4455ea;
+    border-radius: 15px;
+    border: none;
+    & > p {
+      margin: 0 !important;
+      line-height: 20px;
+    }
+  }
+  .imageWrapper {
+    position: relative;
+    width: 230px;
+    height: 130px;
+    margin-right: 30px;
+    .icon {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      border: none;
+      background: transparent;
+      height: 25px;
+      width: 25px;
+      padding: 0;
+      margin: 0;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+    .image {
+      display: block;
+      width: 100%;
+      background: white;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 15px;
+    }
+  }
+}
+
+.wrapperSpinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

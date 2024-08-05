@@ -1,0 +1,20 @@
+FROM node:14-alpine AS builder
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm ci
+
+COPY . ./
+RUN cd src/shared && npm ci
+
+COPY .env.staging .env.production
+
+RUN npm run build
+
+FROM registry.gitlab.com/docker146/nginx-simple
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=builder /app/build /usr/share/nginx/html
